@@ -28,7 +28,7 @@ class touBao(unittest.TestCase):
             browser.find_element_by_id( "j_password" ).clear()
             browser.find_element_by_name( "j_password" ).send_keys( "111111" )
             #点击登录按钮
-            browser.find_element_by_xpath("//img[contains( @onclick,'loginCheck()')]" ).click()
+            browser.find_element_by_xpath("/html/body/table[5]/tbody/tr/td[7]/table/tbody/tr[1]/td/form/table/tbody[3]/tr[2]/td/table/tbody/tr/td[1]/a/img" ).click()
             time.sleep(2)
             #登陆成功，打开在线投保页面
             browser.implicitly_wait(30)
